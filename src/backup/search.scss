@@ -1,0 +1,65 @@
+#search {
+  border-radius: 5px;
+  color: black;
+  background-color: #96a0e7;
+  transition: all;
+  
+  .icon-container {
+    svg {
+      transition: all 0.3s ease-in;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.fade-In {
+  animation: fadeIn 1s forwards;
+  transition: all 1s cubic-bezier(0.6, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.6, 0, 0.2, 1);
+}
+
+.fade-Out {
+  animation: fadeOut 1s forwards;
+  transition: all 1s cubic-bezier(0.6, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.6, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
